@@ -29,9 +29,7 @@ def _get_case(line, lines):
 
 
 def solve(R, C, M, m):
-    i = 0
-    while len(m['?']) > 0 and i < 20:
-        i += 1
+    while len(m['?']) > 0: 
         for r, c in m['?']:
             for key in m.keys():
                 if key != '?':
